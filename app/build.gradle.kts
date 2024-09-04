@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.david.ecommerce_mobile"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.david.ecommerce_mobile"
