@@ -7,24 +7,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class home extends AppCompatActivity {
-    Button btn_registro;
+public class registro extends AppCompatActivity {
+    Button btn_home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_registro);
 
-        btn_registro = findViewById(R.id.btn_ir_registro);
-        btn_registro.setOnClickListener(new View.OnClickListener() {
+        btn_home = findViewById(R.id.btn_home);
+        btn_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                irRegistro();
+                irHome();
             }
         });
     }
 
-    private void irRegistro(){
-        Intent intent = new Intent(home.this, registro.class);
+    private void irHome(){
+        Intent intent = new Intent(registro.this, home.class);
         startActivity(intent);
     }
 }
